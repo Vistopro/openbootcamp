@@ -1,3 +1,3 @@
 # openbootcamp
-Exercises done for Openbootcamp \\
+Exercises done for Openbootcamp <br>
 Ejercicios clasificados por temas (branches)
