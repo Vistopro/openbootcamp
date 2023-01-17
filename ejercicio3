@@ -1,0 +1,5 @@
+peso=float(input("Indica su peso en kg: "))
+altura=float(input("Indica su estatura en metros: "))
+imc=round(peso/(altura*altura),2)
+print("Tu índice de masa corporal es: ",imc)
+
