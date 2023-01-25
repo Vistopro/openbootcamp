@@ -1,0 +1,24 @@
+import pickle
+
+class Vehiculo():
+    marca= ""
+    color=""
+
+    def __init__(self,marca,color):
+        self.marca=marca
+        self.color=color
+
+    def __str__(self):
+        return f'Marca del vehiculo: {self.marca} Color del Vehiculo: {self.color}'
+
+miVehiculo= Vehiculo("mazda","rojo")
+
+
+f=open('datos.txt','wb')
+pickle.dump(miVehiculo,f)
+f.close()
+
+
+f=open('datos.txt','rb')
+print(pickle.load(f))
+f.close()
