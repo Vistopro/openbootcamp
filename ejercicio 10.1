@@ -1,37 +1,35 @@
 import tkinter
 from tkinter import ttk
- 
+from tkinter import *
 
 def etiqueta():
-    window.config(text="{}".format(opcion.get()))
+    monitor.config(text="{}".format(opcion.get()))
+
 
 def reset():
     opcion.set(None)
     monitor.config(text="")
 
 
-window=tkinter.Tk()
+window = tkinter.Tk()
 opcion = tkinter.StringVar()
-opcion.set(None)
-
-window.columnconfigure(0,weight=1)
-window.columnconfigure(1,weight=4)
 
 
-boton1=ttk.Radiobutton(window,text="botón 1",variable=opcion, value="botón 1",command=etiqueta)
-boton1.grid(column=0, row=1, sticky=tkinter.W,padx=10,pady=10)
+window.columnconfigure(0, weight=1)
+window.columnconfigure(1, weight=4)
 
-boton2=ttk.Radiobutton(window,text="botón 2",variable=opcion,value="botón 2",command=etiqueta)
-boton2.grid(column=0, row=2, sticky=tkinter.W,padx=10,pady=10)
+boton1 = ttk.Radiobutton(window, text="botón 1", variable=opcion, value="botón 1", command=etiqueta)
+boton1.grid(column=0, row=1, sticky=tkinter.W, padx=10, pady=10)
 
-boton3=ttk.Radiobutton(window,text="botón 3",variable=opcion,value="botón 3",command=etiqueta)
-boton3.grid(column=0, row=3, sticky=tkinter.W,padx=10,pady=10)
+boton2 = ttk.Radiobutton(window, text="botón 2", variable=opcion, value="botón 2", command=etiqueta)
+boton2.grid(column=0, row=2, sticky=tkinter.W, padx=10, pady=10)
 
-botonOk=ttk.Button(window,text='Reiniciar',command=reset)
-botonOk.grid(column=1,row=3,padx=10,pady=10)
+boton3 = ttk.Radiobutton(window, text="botón 3", variable=opcion, value="botón 3", command=etiqueta)
+boton3.grid(column=0, row=3, sticky=tkinter.W, padx=10, pady=10)
 
-monitor=label(window)
-monitor.grid(column=1,row=4,padx=10,pady=10)
+botonOk = ttk.Button(window, text='Reiniciar', command=reset)
+botonOk.grid(column=1, row=3, padx=10, pady=10)
 
-
+monitor=Label(window)
+monitor.grid(column=1, row=4, padx=10, pady=10)
 window.mainloop()
