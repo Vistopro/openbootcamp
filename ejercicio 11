@@ -5,7 +5,7 @@ def buscarAlumno(a, b):
     conexion = sqlite3.connect("database.db")
     cursor = conexion.cursor()
     conexion.execute("""create table alumnos(
-                 #     id integer primary key AUTOINCREMENT, nombre text, apellidos text)""")
+                     id integer primary key AUTOINCREMENT, nombre text, apellidos text)""")
     cursor.execute("""insert into alumnos (nombre,apellidos) values ("Antonio", "Rodriguez"),
                    ("Eduardo", "Peña"),("Tomás", "Garcia"),("Raul", "Mendoza"),
                     ("Laura", "Gomez"), ("Andrea", "Lopez"), ("Miguel", "Fernandez"), ("Paula", "Gonzalez")""")
