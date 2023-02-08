@@ -7,11 +7,11 @@ public class HelloWorld {
 
         SmartPhone movil= new SmartPhone("Samsung", "Galaxy", "Samsung", "rojo", 2018, 30, 64, "4k" );
 
-        System.out.println(movil.toString());
+        System.out.println(movil);
 
         SmartWatch reloj= new SmartWatch("Apple", "Watch", "Apple", "rojo", 2018, 30, "cuadrada", "deportivo", true);
 
-        System.out.println(reloj.toString());
+        System.out.println(reloj);
         }
 
     }
