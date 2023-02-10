@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+
+        String str="Hola mundo";
+        System.out.println(reverse(str));
+    }
+
+    public static String reverse(String texto) {
+       String textoReves= "";
+
+        for (int i = texto.length() - 1; i >= 0; i--){
+
+                textoReves += texto.charAt(i);
+
+        }
+        return textoReves;
+    }
+
+}
