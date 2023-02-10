@@ -1,19 +1,98 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
-        String str="Hola mundo";
+        //Introducimos un texto
+        Scanner scanner= new Scanner(System.in);
+        System.out.println("Ingrese un texto: ");
+        String str=scanner.nextLine();
+
         System.out.println(reverse(str));
+
+        //introducimos un array unidimensional por teclado
+        int [] arrayUni= new int[8];
+        for (int i = 0; i < arrayUni.length; i++) {
+        
+        //capturamos el error de que se meta en pantalla un texto
+            try {
+                Scanner sca= new Scanner(System.in);
+                System.out.println("Ingrese los números (máximo 8 números): ");
+                arrayUni[i] = sca.nextInt();
+                if (arrayUni[i] < 0) {
+
+                    System.out.println("El número " + arrayUni[i] + " no puede ser negativo");
+
+                }
+
+            } catch (InputMismatchException e) {
+                System.out.println("No puedes introducir caracteres " + e.getMessage());
+                    i--;
+            }
+        }
+        arrayUnidimensional(arrayUni);
+        
+        
+        //introducimos un arraybidimensional
+        String[][] arrayBidi={{"a","b"},{"c","d"}};
+        arrayBidimensional(arrayBidi);
     }
 
+
+    //Función que devuelve cualquier texto del revés
     public static String reverse(String texto) {
        String textoReves= "";
 
         for (int i = texto.length() - 1; i >= 0; i--){
 
                 textoReves += texto.charAt(i);
-
         }
         return textoReves;
     }
 
+//funcion imprimir array unidimensional
+public static void arrayUnidimensional(int[] array){
+
+        for(int a: array){
+            System.out.print(a);
+
+        }
 }
+
+//función imprimir array bidimensional
+public static void arrayBidimensional(String[][] array){
+
+    for (String[] strings : array) {
+
+        for (String string : strings) {
+
+            System.out.print(string);
+        }
+    }
+
+}
+}
+
+import java.util.Vector;
+
+public class Vectores {
+
+    public static void main(String[] args) {
+
+       Vector<Integer> vector= new Vector<>();
+
+        vector.add(1);
+        vector.add(2);
+        vector.add(3);
+        vector.add(4);
+        vector.add(5);
+
+        vector.removeElementAt(1);
+        vector.removeElementAt(2);
+
+        System.out.println(vector);
+    }
+}
+
+
