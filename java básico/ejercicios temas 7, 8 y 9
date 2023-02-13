@@ -74,6 +74,8 @@ public static void arrayBidimensional(String[][] array){
 }
 }
 
+//Vectores------------------------------------------
+
 import java.util.Vector;
 
 public class Vectores {
@@ -95,4 +97,103 @@ public class Vectores {
     }
 }
 
+//Array list and Linkedlist--------------------------------
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class EjercicioArrayList {
+
+    public static void main(String[] args) {
+
+        ArrayList<String> lista = new ArrayList<>();
+
+        lista.add("hola");
+        lista.add("soy");
+        lista.add("Antonio");
+        lista.add("José");
+
+        System.out.println(lista);
+
+        LinkedList<String> listaLinked = new LinkedList<>(lista);
+
+        System.out.println(listaLinked);
+    }
+}
+
+//Array list int--------------------------------------------
+
+import java.util.ArrayList;
+
+public class EjercicioArrayListint {
+
+    public static void main(String[] args) {
+
+        ArrayList<Integer> lista = new ArrayList<>();
+
+        for(int i = 0; i < 10; i++){
+
+            lista.add(i+1);
+        }
+        for (int i=0; i<lista.size(); i++){
+
+            lista.removeIf(x -> x % 2 == 0);
+        }
+        System.out.println(lista);
+    }
+
+}
+
+//Función divideporcero-----------------------------
+
+import java.util.Scanner;
+
+public class Dividirporcero {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese un numero: ");
+        int a = scanner.nextInt();
+        System.out.print("Ingrese un numero: ");
+        int b = scanner.nextInt();
+        try {
+            int result = DividePorCero(a,b);
+            System.out.println(result);
+        }
+        catch (ArithmeticException e) {
+            System.out.println(e.getMessage()+" / Esto no puede hacerse");
+        }finally {
+            System.out.println("Demo de código");
+        }
+    }
+    public static int DividePorCero(int a, int b) throws ArithmeticException {
+
+            return a/b;
+             }
+}
+
+import java.io.*;
+
+public class CopiarFicheros {
+
+    public static void main(String[] args)  {
+        try {
+            InputStream fichero = new FileInputStream("src/archivos.txt");
+
+
+                byte[] datos = fichero.readAllBytes();
+                 for (byte b : datos) {
+                     System.out.println(b);
+                 }
+            fichero.close();
+
+            PrintStream ficheroSalida= new PrintStream("src/archivos2.txt");
+            ficheroSalida.write(datos);
+            ficheroSalida.close();
+
+        }
+        catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
