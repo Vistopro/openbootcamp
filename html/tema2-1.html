@@ -2,24 +2,25 @@
 <html>
     <head><title>Ejercicio 02 - Formularios en HTML</title></head>
     <body>
-        <form action="/" method="get">Formulario</form>
+        <form action="/" method="get">Formulario
         <div>
             <label>Nombre</label>    
-            <input name="nombre" id="nombre" required>
+            <input name="nombre" id="nombre" required placeholder="Tu nombre">
         </div>
         <br>
         <div>
             <label>Edad</label>    
-            <input type="number" name="edad" id="edad" min="0" max="200">
+            <input type="number" name="edad" id="edad" min="0" max="200" placeholder="Tu edad">
         </div>  
         <br>
         <div>
             <label>Frase favorita</label>    
-            <textarea name="frasefavorita" id="frasefavorita"></textarea>
+            <textarea name="frasefavorita" id="frasefavorita" placeholder="Tu frase favorita"></textarea>
         </div>
         <br>
         <button type="reset">Reset</button>
         <button type="submit">Enviar</button>
+        </form>
     </body>
 
 </html>
