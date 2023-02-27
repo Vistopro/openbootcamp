@@ -1,0 +1,11 @@
+.galeria{
+    display: flex;
+    background-color: palevioletred;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+img{
+    width: 300px;;
+   
+}
