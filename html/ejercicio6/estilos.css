@@ -1,0 +1,22 @@
+*{
+    padding: 10px;
+}
+
+.boton{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    color:black;
+}
+.boton::before{
+    content: "Pasa por encima";
+    
+}
+
+.boton:hover{
+    background-color: green;
+    color: white;
+    cursor: help;
+}
+
