@@ -8,6 +8,7 @@
     height: 100px;
     font-size: 30px;
     color:black;
+    
 }
 .boton::before{
     content: "Pasa por encima";
