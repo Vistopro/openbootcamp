@@ -1,2 +1,2 @@
-# openbootcamp
+# OpenBootCamp
 Exercises done for Openbootcamp 
