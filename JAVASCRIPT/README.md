@@ -1,18 +1,18 @@
 # Curso JAVASCRIPT
 
-1 - Introducción a JavaScript
+1 - [Introducción a JavaScript](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema1)
 
-2 - Sintaxis, variables y palabras reservadas de JS
+2 - [Sintaxis, variables y palabras reservadas de JS](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema2)
 
-3 - Estructuras de control
+3 - [Estructuras de control](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema3)
 
-4 - Cadenas de texto
+4 - [Cadenas de texto](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema4)
 
-5 - Números en JavaScript
+5 - [Números en JavaScript](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema5)
 
-6 - Trabajando con listas
+6 - [Trabajando con listas](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema6)
 
-7 - Trabajando con Sets y Objetos
+7 - [Trabajando con Sets y Objetos](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema7)
 
 8 - Introducción a las funciones
 
