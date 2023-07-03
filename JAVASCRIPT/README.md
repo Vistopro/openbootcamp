@@ -14,22 +14,22 @@
 
 7 - [Trabajando con Sets y Objetos](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema7)
 
-8 - Introducción a las funciones
+8 - [Introducción a las funciones](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema8)
 
-9 - Gestión de errores
+9 - [Gestión de errores](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema9)
 
-10 - Módulos en JavaScript
+10 - [Módulos en JavaScript](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema10)
 
-11 - POO en JavaScript
+11 - [POO en JavaScript](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema11)
 
-12 - Depuración de código
+12 - [Depuración de código](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema12)
 
-13 - Configuracion y uso de ESLint
+13 - [Configuracion y uso de ESLint](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema13)
 
-14 - Gestión de eventos
+14 - [Gestión de eventos](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema14)
 
-15 - Persistencia de datos en navegador
+15 - [Persistencia de datos en navegador](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema15)
 
-16 - Aplicando Drag & Drop
+16 - [Aplicando Drag & Drop](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema16)
 
-17 - Usando Geolocalización
+17 - [Usando Geolocalización](https://github.com/Vistopro/openbootcamp/tree/main/JAVASCRIPT/tema17)
