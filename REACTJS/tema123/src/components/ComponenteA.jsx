@@ -1,21 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Contact} from '../../models/contact.class';
+import {Contact} from '../models/contact.class';
+import ComponenteB from './ComponenteB';
 
-const ContactComponent = ({contact}) => {
+const ComponenteA = ({contact}) => {
     return (
         <div>
         <h1>Name: {contact.name}</h1>
         <h2>Surname: {contact.surname}</h2>
         <h3>Email: {contact.email}</h3>
-        <h4>{contact.connected ? 'Contact online':'Contact disconnected'}</h4>
+        <ComponenteB connected = {contact.connected} />
         </div>
     );
 };
 
-ContactComponent.propTypes = {
+ComponenteA.propTypes = {
     contact: PropTypes.instanceOf(Contact).isRequired,
     // connected: PropTypes.bool.isRequired,
 };
     
-export default ContactComponent;
+export default ComponenteA;

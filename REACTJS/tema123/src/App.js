@@ -1,14 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import ContactListComponent from './components/container/contact_list';
+import {Contact} from './models/contact.class';
+import ComponenteA from './components/ComponenteA';
 
 function App() {
+  const contactProof = new Contact("John", "Doe", "email@email.com", false);
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-      <ContactListComponent />  
+      <ComponenteA contact = {contactProof}  />  
            </header>
     </div>
   );
